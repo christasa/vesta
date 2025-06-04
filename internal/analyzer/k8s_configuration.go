@@ -337,6 +337,9 @@ func (ks *KScanner) checkDaemonSet(ns string) error {
 		vList := ks.podAnalyze(da.Spec.Template.Spec, rv, ns, p.Name)
 
 		if len(vList) > 0 {
+			if p.Name == "" {
+				continue
+			}
 
 			severity := "low"
 			for _, v := range vList {

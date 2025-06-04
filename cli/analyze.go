@@ -19,6 +19,9 @@ func analyze() {
   # Full analyze Kubernetes
   $ vesta analyze k8s
 
+  # Full analuze Kubernetes with located file
+  $ vesta analyze k8s -o output.json
+
   # analyze by specifying config
   $ vesta analyze k8s --kubeconfig config
 

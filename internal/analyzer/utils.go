@@ -537,8 +537,8 @@ func (ks *KScanner) prunePod(ns, podName string) (bool, error) {
 
 	podNumber := len(pods.Items)
 
-	ageWeight := make([]float64, podNumber-1)
-	restartWeight := make([]int, podNumber-1)
+	ageWeight := make([]float64, podNumber)
+	restartWeight := make([]int, podNumber)
 
 	index := 0
 	for _, pod := range pods.Items {

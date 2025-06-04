@@ -10,6 +10,7 @@
 - Check the length in pod container 
 - Fixed the circumstance of when ETCD is not in kube-system
 - Add insecure opetions for kubeconfig login
+- Fixed the index out of range in prunePod
 
 # 1.0.10 (2024.2.2)
 ## features
